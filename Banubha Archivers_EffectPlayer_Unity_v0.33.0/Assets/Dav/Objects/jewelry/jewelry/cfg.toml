@@ -1,0 +1,51 @@
+msaa = 1
+shadowmap_size = 512
+adjust_znear = 150
+draw_order = ['mat_cut', 'mat_necklace', 'mat_earrings']
+
+# Cut
+[materials.mat_cut]
+vs = "mat_cut.vert"
+fs = "mat_cut.frag"
+blend = "off"
+backfaces = false
+colorwrite = false
+zwrite = true
+shadow = false
+samplers = {}
+
+# PBR
+[materials.mat_necklace]
+vs = "mat_necklace.vert"
+fs = "mat_necklace.frag"
+blend = "alpha" # "alpha", "premul_alpha", "screen", "add", "multiply", "coverage", "off"
+backfaces = false
+colorwrite = true
+zwrite = true
+shadow = false
+[materials.mat_necklace.samplers]
+tex_diffuse="Necklace_BaseColor.png"
+tex_normal="Necklace_Normal.png"
+tex_metallic="Necklace_Metallic.png"
+tex_roughness="Necklace_Roughness.png"
+tex_brdf="brdf.ktx"
+tex_ibl_diff="ibl_diff.ktx"
+tex_ibl_spec="ibl_spec.ktx"
+
+# PBR
+[materials.mat_earrings]
+vs = "mat_earrings.vert"
+fs = "mat_earrings.frag"
+blend = "alpha" # "alpha", "premul_alpha", "screen", "add", "multiply", "coverage", "off"
+backfaces = false
+colorwrite = true
+zwrite = true
+shadow = false
+[materials.mat_earrings.samplers]
+tex_diffuse="Earings_BaseColor.png"
+tex_normal="Earings_Normal.png"
+tex_metallic="Earings_Metallic.png"
+tex_roughness="Earings_Roughness.png"
+tex_brdf="brdf.ktx"
+tex_ibl_diff="ibl_diff.ktx"
+tex_ibl_spec="ibl_spec.ktx"

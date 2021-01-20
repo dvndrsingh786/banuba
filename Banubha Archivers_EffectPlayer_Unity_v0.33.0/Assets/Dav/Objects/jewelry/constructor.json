@@ -1,0 +1,310 @@
+{
+  "name": "not_set",
+  "capabilities": {
+    "effectyPlayerMajorVersion": 1,
+    "effectyPlayerMinorVersion": 0
+  },
+  "conversion": {
+    "textures": {
+      "glazed_patio": {
+        "ignored": false
+      }
+    },
+    "models": {
+      "cut": {
+        "ignored": false,
+        "materials": [
+          "mat_cut"
+        ]
+      },
+      "earrings": {
+        "ignored": false,
+        "materials": [
+          "mat_earrings"
+        ],
+        "physics": {
+          "bones": [
+            {
+              "name": "joint_earringL_root",
+              "mass": 0
+            },
+            {
+              "name": "joint_earringL_second_0",
+              "mass": 0
+            },
+            {
+              "name": "joint_earringL_third_0",
+              "mass": 0
+            },
+            {
+              "name": "joint_earringL_third_1",
+              "mass": 7
+            },
+            {
+              "name": "joint_earringL_first_0",
+              "mass": 0
+            },
+            {
+              "name": "joint_earringL_second_1",
+              "mass": 7
+            },
+            {
+              "name": "joint_earringL_first_1",
+              "mass": 7
+            },
+            {
+              "name": "joint_earringL_second_2",
+              "mass": 5
+            },
+            {
+              "name": "joint_earringL_first_2",
+              "mass": 5
+            },
+            {
+              "name": "joint_earringL_third_2",
+              "mass": 5
+            },
+            {
+              "name": "joint_earringL_second_3",
+              "mass": 5
+            },
+            {
+              "name": "joint_earringR_root",
+              "mass": 0
+            },
+            {
+              "name": "joint_earringR_second_0",
+              "mass": 0
+            },
+            {
+              "name": "joint_earringR_first_0",
+              "mass": 0
+            },
+            {
+              "name": "joint_earringR_second_1",
+              "mass": 7
+            },
+            {
+              "name": "joint_earringR_first_1",
+              "mass": 7
+            },
+            {
+              "name": "joint_earringR_third_0",
+              "mass": 0
+            },
+            {
+              "name": "joint_earringR_second_2",
+              "mass": 5
+            },
+            {
+              "name": "joint_earringR_third_1",
+              "mass": 7
+            },
+            {
+              "name": "joint_earringR_first_2",
+              "mass": 5
+            },
+            {
+              "name": "joint_earringR_second_3",
+              "mass": 5
+            },
+            {
+              "name": "joint_earringR_third_2",
+              "mass": 5
+            },
+            {
+              "name": "joint_earringL_first_end",
+              "mass": 3
+            },
+            {
+              "name": "joint_earringL_third_end",
+              "mass": 3
+            },
+            {
+              "name": "joint_earringL_second_end",
+              "mass": 3
+            },
+            {
+              "name": "joint_earringR_first_end",
+              "mass": 3
+            },
+            {
+              "name": "joint_earringR_second_end",
+              "mass": 3
+            },
+            {
+              "name": "joint_earringR_third_end",
+              "mass": 3
+            }
+          ],
+          "spheres": [
+            {
+              "r": 75,
+              "x": 0,
+              "y": 36,
+              "z": 7
+            }
+          ],
+          "damping": 98,
+          "gravity": {
+            "x": 0,
+            "y": -900.0,
+            "z": 0
+          },
+          "file_name": "D:\\Projects\\Tutorials\\jewelry\\effect\\jewelry\\src\\earrings.fbx",
+          "active": true
+        }
+      },
+      "necklace_l": {
+        "ignored": false,
+        "materials": [
+          "mat_necklace"
+        ]
+      },
+      "necklace_r": {
+        "ignored": false,
+        "materials": [
+          "mat_necklace"
+        ]
+      }
+    }
+  },
+  "rendering": {
+    "warp_mesh": "",
+    "warp_hair": 0,
+    "shadowmap_size": 512,
+    "msaa": 1,
+    "adjust_znear": 150,
+    "adjust_zfar": 0,
+    "draw_order": [
+      "mat_cut",
+      "mat_necklace",
+      "mat_earrings"
+    ],
+    "materials": {
+      "mat_cut": {
+        "enabled": true,
+        "template": {
+          "name": "cut",
+          "parameters": {
+            "backfaces": "false",
+            "GLFX_USE_UVMORPH": "false",
+            "GLFX_UVMORPH_Z_UP": "false",
+            "GLFX_USE_AUTOMORPH": "false",
+            "GLFX_AUTOMORPH_BONE": "false",
+            "GLFX_1_BONE": "false"
+          }
+        }
+      },
+      "mat_necklace": {
+        "enabled": true,
+        "template": {
+          "name": "default",
+          "parameters": {
+            "backfaces": "false",
+            "colorwrite": "true",
+            "zwrite": "true",
+            "shadow": "false",
+            "blend": "alpha",
+            "tex_diffuse": "Necklace_BaseColor.png",
+            "GLFX_IBL": "true",
+            "tex_brdf": "brdf.ktx",
+            "tex_ibl_diff": "ibl_diff.ktx",
+            "tex_ibl_spec": "ibl_spec.ktx",
+            "GLFX_TBN": "true",
+            "tex_normal": "Necklace_Normal.png",
+            "GLFX_TEX_MRAO": "false",
+            "tex_metallic": "Necklace_Metallic.png",
+            "tex_roughness": "Necklace_Roughness.png",
+            "GLFX_AO": "false",
+            "GLFX_TEX_EMI": "false",
+            "GLFX_LIGHTING": "true",
+            "GLFX_2SIDED": "false",
+            "GLFX_USE_UVMORPH": "false",
+            "GLFX_UVMORPH_Z_UP": "false",
+            "GLFX_USE_BG": "false",
+            "GLFX_USE_AUTOMORPH": "false",
+            "GLFX_AUTOMORPH_BONE": "false",
+            "GLFX_1_BONE": "false",
+            "GLFX_USE_SHADOW": "false",
+            "GLFX_OCCLUSION": "false"
+          }
+        }
+      },
+      "mat_earrings": {
+        "enabled": true,
+        "template": {
+          "name": "default",
+          "parameters": {
+            "backfaces": "false",
+            "colorwrite": "true",
+            "zwrite": "true",
+            "shadow": "false",
+            "blend": "alpha",
+            "tex_diffuse": "Earings_BaseColor.png",
+            "GLFX_IBL": "true",
+            "tex_brdf": "brdf.ktx",
+            "tex_ibl_diff": "ibl_diff.ktx",
+            "tex_ibl_spec": "ibl_spec.ktx",
+            "GLFX_TBN": "true",
+            "tex_normal": "Earings_Normal.png",
+            "GLFX_TEX_MRAO": "false",
+            "tex_metallic": "Earings_Metallic.png",
+            "tex_roughness": "Earings_Roughness.png",
+            "GLFX_AO": "false",
+            "GLFX_TEX_EMI": "false",
+            "GLFX_LIGHTING": "true",
+            "GLFX_2SIDED": "false",
+            "GLFX_USE_UVMORPH": "false",
+            "GLFX_UVMORPH_Z_UP": "false",
+            "GLFX_USE_BG": "false",
+            "GLFX_USE_AUTOMORPH": "false",
+            "GLFX_AUTOMORPH_BONE": "false",
+            "GLFX_1_BONE": "false",
+            "GLFX_USE_SHADOW": "false",
+            "GLFX_OCCLUSION": "false"
+          }
+        }
+      },
+      "retouch": {
+        "enabled": false,
+        "template": {
+          "name": "retouch",
+          "parameters": {
+            "backfaces": "false",
+            "colorwrite": "true",
+            "zwrite": "true",
+            "shadow": "false",
+            "blend": "off",
+            "onface": "true",
+            "mouth": "true",
+            "TEETH_WHITENING": "true",
+            "tex_lookupTeeth": "",
+            "teethWhiteningCoeff": "1.0",
+            "EYES_WHITENING": "true",
+            "tex_lookupEyes": "",
+            "eyesWhiteningCoeff": "0.5",
+            "EYES_HIGHLIGHT": "true",
+            "tex_highlight": "",
+            "SOFT_LIGHT_LAYER": "true",
+            "tex_softLight": "",
+            "NORMAL_LAYER": "true",
+            "tex_normalMakeup": "",
+            "SOFT_SKIN": "true",
+            "skinSoftIntensity": "0.7",
+            "SHARPEN_TEETH": "true",
+            "teethSharpenIntensity": "0.2",
+            "SHARPEN_EYES": "true",
+            "eyesSharpenIntensity": "0.3",
+            "PSI": "0.1",
+            "GLFX_OCCLUSION": "false"
+          }
+        }
+      }
+    }
+  },
+  "media": {},
+  "config": {
+    "lookupTexture": "sunny.png"
+  }
+}
